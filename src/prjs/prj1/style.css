@@ -1,0 +1,16 @@
+/* The canvas fills the whole browser window, with no margins and no
+   scrollbars. Its size in pixels is set from JavaScript (see resize() in
+   app.js), which is what WebGL actually draws into. */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;     /* no gap under the canvas, as an inline element would leave */
+}
